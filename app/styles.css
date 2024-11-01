@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --dark-color: rgb(51, 43, 53);
+    --light-color: PapayaWhip;
+}
+body {
+  background: var(--dark-color);
+  background-image: linear-gradient(to bottom, rgba(75, 0, 0, .2), rgba(75, 0, 0, .4)),
+  url("../public/background.png");
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  box-sizing: border-box;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+}
+.Card {
+    background-color: rgba(200,200,200, .4);
+    border-radius: 10px;
+    padding: 2vh;
+    border: white 2px solid;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    border-bottom-right-radius: 225px 15px;
+    border-bottom-left-radius:15px 255px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#PictureContainer > img {
+    border-radius: 50%; 
+    border: 2px solid white;
+    border-top-left-radius: 50% calc(50% - 15px);
+    border-top-right-radius: calc(50% - 15px) 50%;
+    border-bottom-right-radius: 50% calc(50% - 15px);
+    border-bottom-left-radius:calc(50% - 15px) 50%;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+#NavBar {
+    flex: 1;
+    height: 100%;
+}
+footer {
+    color: var(--light-color);
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Link {
+    position: relative;
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--light-color);
+    t1-decoration: none;
+}
+.LinkBaseImage, .LinkHoverImage {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease;
+}
+.LinkHoverImage {
+    opacity: 0;
+}
+.Link:hover .LinkHoverImage{
+    opacity: 1;
+}
+@keyframes rotateAndPulse { 
+    0% { transform: rotate(0deg) scale(1.2); } 
+    25% { transform: rotate(90deg) scale(1.4); } 
+    50% { transform: rotate(180deg) scale(1.2); } 
+    75% { transform: rotate(270deg) scale(1.4); } 
+    100% { transform: rotate(360deg) scale(1.2); } 
+}
+.Link:hover {
+    animation: rotateAndPulse 4s linear infinite;
+}
