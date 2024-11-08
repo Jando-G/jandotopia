@@ -14,7 +14,7 @@ const Bio: React.FC = () => {
             </div>
             <div className="mt-10 BioBoxContainer flex flex-col flex-1">
                 <div id="BioBoxTop"><div className="text-[#7a7a7a]">jando@jandotopia-dot-online: ~</div></div>
-                <div id="BioBox" className="flex-1"> <span className="text-[#698763]">jando@jandotopia-dot-online</span>:<span className="text-[#729ec9]">~</span>$ info <br></br>Hello stranger :D Welcome to my website. <br></br><br></br>This is the only page for now. I'm planning to add an images page later to show off the things I'm making.</div>
+                <div id="BioBox" className="flex-1"> <span className="text-[#698763]">jando@jandotopia-dot-online</span>:<span className="text-[#729ec9]">~</span>$ info <br></br>Hello stranger :D Welcome to my website. <br></br><br></br>This is the only page for now. I&apos;m planning to add an images page later to show off the things I&apos;m making.</div>
             </div>
         </div>
     );
