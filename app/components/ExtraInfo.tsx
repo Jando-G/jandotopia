@@ -11,13 +11,17 @@ const ExtraInfo: React.FC = () => {
                     <img src="/discord_logo.png" alt="Discord Link" className="LinkBaseImage"/> 
                     <img src="/discord_logo_hover.png" className="LinkHoverImage"/>
             </a>
-            <a href="https://open.spotify.com/user/12124317792" className ="Link">
-                    <img src="/spotify_logo.png" alt="Spotify Link" className="LinkBaseImage"/> 
-                    <img src="/spotify_logo_hover.png" className="LinkHoverImage"/>
-            </a>
             <a href="https://jando-g.itch.io/" className ="Link">
                     <img src="/itch_logo.png" alt="Itch.io Link" className="LinkBaseImage"/> 
                     <img src="/itch_logo_hover.png" className="LinkHoverImage"/>
+            </a>
+            <a href="https://steamcommunity.com/id/alexlrey/" className ="Link">
+                    <img src="/steam_logo.png" alt="Steam Link" className="LinkBaseImage"/> 
+                    <img src="/steam_logo_hover.png" className="LinkHoverImage"/>
+            </a>
+            <a href="https://open.spotify.com/user/12124317792" className ="Link">
+                    <img src="/spotify_logo.png" alt="Spotify Link" className="LinkBaseImage"/> 
+                    <img src="/spotify_logo_hover.png" className="LinkHoverImage"/>
             </a>
             <a href="https://myanimelist.net/animelist/minombrejeff?status=7&order=4&order2=0" className ="Link">
                     <img src="/mal_logo.png" alt="My Anime List Link" className="LinkBaseImage"/> 

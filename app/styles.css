@@ -6,44 +6,43 @@
     --dark-color: rgb(51, 43, 53);
     --light-color: PapayaWhip;
 }
+
 body {
-  background: var(--dark-color);
-  background-image: linear-gradient(to bottom, rgba(75, 0, 0, .2), rgba(75, 0, 0, .4)),
-  url("../public/background.png");
-  min-height: 100vh;
-  width: 100vw;
-  margin: 0;
-  box-sizing: border-box;
-  background-size: cover;
-  background-repeat:no-repeat;
-  background-position: center center;
+    background: var(--dark-color);
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
+
 .Card {
-    background-color: rgba(200,200,200, .4);
+    background-color: rgba(175, 175, 175, .1);
     border-radius: 10px;
     padding: 2vh;
     border: white 2px solid;
     border-top-left-radius: 255px 15px;
     border-top-right-radius: 15px 225px;
     border-bottom-right-radius: 225px 15px;
-    border-bottom-left-radius:15px 255px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-bottom-left-radius: 15px 255px;
+    box-shadow: rgba(0, 0, 0, 10.35) 0px 5px 15px;
 }
-#PictureContainer > img {
-    border-radius: 50%; 
+
+#PictureContainer>img {
+    border-radius: 50%;
     border: 2px solid white;
     border-top-left-radius: 50% calc(50% - 15px);
     border-top-right-radius: calc(50% - 15px) 50%;
     border-bottom-right-radius: 50% calc(50% - 15px);
-    border-bottom-left-radius:calc(50% - 15px) 50%;
+    border-bottom-left-radius: calc(50% - 15px) 50%;
     object-fit: cover;
     width: 200px;
     height: 200px;
+    margin-right: 20px;
 }
-#NavBar {
-    flex: 1;
-    height: 100%;
-}
+
 footer {
     color: var(--light-color);
     height: 40px;
@@ -52,6 +51,66 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+
+#BasicInfo {
+    display: grid;
+    grid-gap: 4vh;
+    flex: 1;
+    grid-template-rows: 26px 26px 26px;
+    grid-template-columns: 1fr 1fr;
+    align-items: bottom;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.Info {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, .8) 0%, rgba(255, 255, 255, 0) 100%);
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 30.5px;
+    align-items: center;
+}
+
+.Label {
+    background-color: #698763;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin: 1px 10px 1px 2px;
+    padding: 1px 0 1px 0;
+}
+
+.BioBoxContainer {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: 40px;
+    box-shadow: #262227 0px 7px 29px 0px;
+}
+
+#BioBox {
+    color: #dad6e8;
+    background-color: #1b1825;
+    padding: 0 4px 0 4px;
+}
+
+#BioBoxTop {
+    height: 50px;
+    background-color: #2b2b2b;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
 .Link {
     position: relative;
     width: 100px;
@@ -61,27 +120,50 @@ footer {
     justify-content: center;
     gap: 10px;
     color: var(--light-color);
-    t1-decoration: none;
 }
-.LinkBaseImage, .LinkHoverImage {
+
+.LinkBaseImage,
+.LinkHoverImage {
     position: absolute;
     width: 100%;
     height: auto;
     transition: opacity 0.5s ease;
 }
+
 .LinkHoverImage {
     opacity: 0;
 }
-.Link:hover .LinkHoverImage{
+
+.Link:hover .LinkHoverImage {
     opacity: 1;
 }
-@keyframes rotateAndPulse { 
-    0% { transform: rotate(0deg) scale(1.2); } 
-    25% { transform: rotate(90deg) scale(1.4); } 
-    50% { transform: rotate(180deg) scale(1.2); } 
-    75% { transform: rotate(270deg) scale(1.4); } 
-    100% { transform: rotate(360deg) scale(1.2); } 
+
+@keyframes rotateAndPulse {
+    0% {
+        transform: rotate(0deg) scale(1.2);
+    }
+
+    25% {
+        transform: rotate(90deg) scale(1.4);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1.2);
+    }
+
+    75% {
+        transform: rotate(270deg) scale(1.4);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1.2);
+    }
 }
+
 .Link:hover {
     animation: rotateAndPulse 4s linear infinite;
+}
+
+.NavItem {
+    width: 100%;
 }

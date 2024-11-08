@@ -2,20 +2,20 @@ import React from 'react';
 
 const Bio: React.FC = () => {
     return (
-        <div className="Card">
+        <div className="Card flex-1 flex flex-col">
             <div className="flex">
                 <a href="https://bsky.app/profile/kael3.bsky.social/post/3l75jbrqfff2d"><div id="PictureContainer"><img src="/kael.png"></img></div></a>
                 <div id="BasicInfo">
-                    <div>Name: Jando, Alex</div>
-                    <div>Pronouns: Any</div>
-                    <div>Age: 24</div>
+                    <div className="Info"><div className="Label"><div>Name</div></div><div>Jando, Alex</div></div>
+                    <div className="Info"><div className="Label"><div>Age</div></div><div>24</div></div>
+                    <div className="Info"><div className="Label"><div>Pronouns</div></div><div>Any</div></div>
+                    <div className="Info"><div className="Label"><div>MBTI</div></div><div>INFP</div></div>
                 </div>
             </div>
-            <div>
-                Hello stranger, fancy seeing you here.
-                <img src="/construction.gif"></img>
+            <div className="mt-10 BioBoxContainer flex flex-col flex-1">
+                <div id="BioBoxTop"><div className="text-[#7a7a7a]">jando@jandotopia-dot-online: ~</div></div>
+                <div id="BioBox" className="flex-1"> <span className="text-[#698763]">jando@jandotopia-dot-online</span>:<span className="text-[#729ec9]">~</span>$ info <br></br>Hello stranger :D Welcome to my website. <br></br><br></br>This is the only page for now. I'm planning to add an images page later to show off the things I'm making.</div>
             </div>
-
         </div>
     );
 };
