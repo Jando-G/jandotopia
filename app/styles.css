@@ -101,14 +101,34 @@ footer {
     box-shadow: #262227 0px 7px 29px 0px;
     overflow: scroll;
     font-family: 'DejaVu';
+    overflow: hidden;
 }
 
 #Terminal {
     color: #dad6e8;
     background-color: #1b1825;
     padding: 0 4px 0 4px;
-    overflow: scroll;
+    overflow-y: scroll;
 }
+#Terminal::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  #Terminal::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  #Terminal::-webkit-scrollbar-thumb {
+    background: #767677;
+    border-radius: 100px;
+  }
+  
+  /* Handle on hover */
+  #Terminal::-webkit-scrollbar-thumb:hover {
+    background: #636364;
+  }
 
 #TerminalTop {
     height: 50px;
