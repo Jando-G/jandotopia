@@ -25,8 +25,26 @@ const Terminal: React.FC = () => {
     };
 
     const commandDictionary: { [key: string]: JSX.Element } = { 
-        help: <div>commands: help, about, clear</div>, 
-        about: <div>Hello, I'm Alex. This is my personal website.</div>,
+        help: <div>commands: about, help, clear</div>, 
+        about: <div>Hello, I'm Alex. This is my personal website. It serves 3 main purposes.
+        <br></br>   1. Organize links to my social media and other websites I frequent
+        <br></br>   2. Host images of stuff I'm working on (currently that page does not exist)
+        <br></br>   3. Making websites is fun :p
+        <br></br><br></br>Since you got this far, here are some commands you can use to learn more about me: goals, hobbies</div>,
+        goals: <div>My goals right now are:
+        <br></br>   1. Socialize more
+        <br></br>   2. Be less judgemental of myself and others
+        <br></br>   3. Be more confrontational and honest with people
+        <br></br>   4. Continue to improve at game developement
+        <br></br>   5. Allow myself to do things I enjoy without feeling guilty. Making this website is a great example of that.
+        </div>,
+        hobbies: <div>These days I mostly skate my flatrail, play videogames, sing, play drums and watch a crippling amount of Youtube. 
+        <br></br>And of course, I am also learning game developement. Game developement is a hobby that I've had for about 2 years now. I really like how it's a 
+        combination of many creative unique skills. I'm not good at sticking to one thing for a long time, so it's nice to be able to switch between
+        disciplines and still feel a sense of progress. My two favorite disciplines are game programming and tech art. I only recently started learning tech art 
+        and gosh damn is the learning curve crazy. I just have to remind myself that I'm improving at my own pace and it's all gunna click together soon. I'm excited to share pics of my tech art once 
+        I feel confident enough to do so.
+        </div>,
     }
     
     return (
@@ -40,7 +58,7 @@ const Terminal: React.FC = () => {
             ))}
             <div className="flex h-full"> 
                 <div className="min-w-[15rem]"><span className="text-[#698763]">jando@jandotopia-dot-online</span>:<span className="text-[#729ec9]">~</span>$</div>
-                <textarea value={text} onChange={e => setText(e.target.value)} onKeyDown={handleKeyPress} id="TerminalInput"></textarea>
+                <textarea placeholder={messages.length ? "" : "use 'help' to get a list of commands"} value={text} onChange={e => setText(e.target.value)} onKeyDown={handleKeyPress} id="TerminalInput"></textarea>
             </div>
         </div>
     </div>
