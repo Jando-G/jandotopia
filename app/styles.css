@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'DejaVu';
+    src: url('/DejaVuSansMono.ttf');
+}
+
 :root {
     --dark-color: rgb(51, 43, 53);
     --light-color: PapayaWhip;
 }
+
 
 body {
     background: var(--dark-color);
@@ -94,6 +100,7 @@ footer {
     margin: 40px;
     box-shadow: #262227 0px 7px 29px 0px;
     overflow: scroll;
+    font-family: 'DejaVu';
 }
 
 #Terminal {

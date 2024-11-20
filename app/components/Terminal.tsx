@@ -50,14 +50,14 @@ const Terminal: React.FC = () => {
     return (
         <div className="mt-10 TerminalContainer flex flex-col flex-1">
         <div id="TerminalTop"><div className="text-[#7a7a7a]">jando@jandotopia-dot-online: ~</div></div>
-        <div id="Terminal" className="flex-1">
+        <div id="Terminal" className="flex-1 text-[0.9rem]">
             <div className="flex"> 
             </div>
             {messages.map((message, index) => (
                 <MessageLog key={index} message={message} content={commandDictionary[message]} />
             ))}
             <div className="flex h-full"> 
-                <div className="min-w-[15rem]"><span className="text-[#698763]">jando@jandotopia-dot-online</span>:<span className="text-[#729ec9]">~</span>$</div>
+                <div className="min-w-[17rem]"><span className="text-[#698763]">jando@jandotopia-dot-online</span>:<span className="text-[#729ec9]">~</span>$</div>
                 <textarea placeholder={messages.length ? "" : "use 'help' to get a list of commands"} value={text} onChange={e => setText(e.target.value)} onKeyDown={handleKeyPress} id="TerminalInput"></textarea>
             </div>
         </div>
