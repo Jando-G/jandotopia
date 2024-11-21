@@ -26,11 +26,8 @@ const Terminal: React.FC = () => {
 
     const commandDictionary: { [key: string]: JSX.Element } = { 
         help: <div>commands: about, help, clear</div>, 
-        about: <div>Hello, I'm Alex. This is my personal website. It serves 3 main purposes.
-        <br></br>   1. Organize links to my social media and other websites I frequent
-        <br></br>   2. Host images of stuff I'm working on (currently that page does not exist)
-        <br></br>   3. Making this is fun for me :p
-        <br></br><br></br>Since you got this far, here are some commands you can use to learn more about me: goals, hobbies</div>,
+        about: <div>Hello, I'm Alex. This website exists to help my online stalkers learn more about me. It's supposed to have Images
+            and stuff but I'm still working on that.</div>,
         goals: <div>My goals right now are:
         <br></br>   1. Socialize more
         <br></br>   2. Be less judgemental of myself and others
@@ -39,10 +36,10 @@ const Terminal: React.FC = () => {
         <br></br>   5. Allow myself to do things I enjoy without feeling guilty. Making this website is a great example of that.
         </div>,
         hobbies: <div>These days I mostly skate my flatrail, play videogames, sing, play drums and watch a crippling amount of Youtube. 
-        And of course, I am also learning game development. Game development is a hobby that I've had for about 2 years now. I really like how it's a 
-        combination of many different creative and unique skills. I'm not good at sticking to one thing for a long time, so it's nice to be able to switch between
+        And of course, I am also learning game development. Game development is a hobby that Ive had for about 2 years now. I really like how its a 
+        combination of many different creative and unique skills. Im not good at sticking to one thing for a long time, so its nice to be able to switch between
         disciplines and still feel a sense of progress. My two favorite disciplines are game programming and tech art. I only recently started learning tech art 
-        and gosh damn is the learning curve crazy. I just have to remind myself that I'm improving at my own pace and it's all gunna click together soon. I'm excited to share pics of my tech art once 
+        and gosh damn is the learning curve crazy. I just have to remind myself that Im improving at my own pace and its all gunna click together soon. Im excited to share pics of my tech art once 
         I feel confident enough to do so.
         </div>,
     }
