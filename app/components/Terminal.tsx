@@ -1,8 +1,7 @@
 'use client';
 import React from 'react';
 import MessageLog from './MessageLog';
-import { useState, useEffect } from 'react';
-import { NextRequest, NextResponse, userAgent } from 'next/server'
+import { useState } from 'react';
 
 const Terminal: React.FC = () => {
     const [text, setText] = useState('');

@@ -17,7 +17,7 @@ const Meme: React.FC = () => {
         'https://i.imgur.com/iTAgY0M.png',
         'https://i.imgur.com/rgEYkPc.jpeg',
         'https://i.imgur.com/UC93Tf6.jpeg',
-        
+        'https://i.imgur.com/Kg0wWBk.png',
 
     ]
 
@@ -28,11 +28,11 @@ const Meme: React.FC = () => {
         const randomNumber = Math.floor(Math.random() * imageUrls.length)
         setImageNumber(randomNumber);
         setImageUrl(imageUrls[randomNumber]); 
-    }, []);
+    }, [imageUrls]);
 
     return (
             <div className="flex-1 mt-10 flex flex-col items-center justify-center">
-                <Image width= {600} height = {600} src={imageUrl ? imageUrl : '/loadingBar.gif'} alt="Random Meme"/>
+                <div className="h-[80%] w-[80%] bg-[#50d71e] relative"><Image fill src={imageUrl ? imageUrl : '/loadingBar.gif'} alt="Random Meme"/></div>
                 <div className="text-white"> Meme from my phone no. {imageNumber + 1} / {imageUrls.length}</div>
             </div>
     );
