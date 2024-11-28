@@ -63,22 +63,20 @@ footer {
     display: grid;
     grid-gap: 4vh;
     flex: 1;
-    grid-template-rows: 26px 26px 26px;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     align-items: bottom;
     align-items: center;
-    margin-top: 15px;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .Info {
     background: rgb(255, 255, 255);
     background: linear-gradient(90deg, rgba(255, 255, 255, .8) 0%, rgba(255, 255, 255, 0) 100%);
     display: grid;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 9rem 1fr;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    height: 30.5px;
     align-items: center;
 }
 
@@ -109,6 +107,7 @@ footer {
     background-color: #1b1825;
     padding: 0 4px 0 4px;
     overflow-y: scroll;
+    font-size: .9rem;
 }
 #Terminal::-webkit-scrollbar {
     width: 10px;
@@ -138,7 +137,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    font-size: 1rem;
 }
 #TerminalInput{
     background-color: transparent;

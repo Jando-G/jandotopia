@@ -1,7 +1,8 @@
 'use client';
 import React from 'react';
 import MessageLog from './MessageLog';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { NextRequest, NextResponse, userAgent } from 'next/server'
 
 const Terminal: React.FC = () => {
     const [text, setText] = useState('');
@@ -25,7 +26,7 @@ const Terminal: React.FC = () => {
     };
 
     const commandDictionary: { [key: string]: JSX.Element } = { 
-        help: <div>commands: about, help, clear</div>, 
+        help: <div>commands: about, infofetch, help, clear</div>, 
         about: <div>Hello, I'm Alex. This website exists to help my online stalkers learn more about me. It's supposed to have Images
             and stuff but I'm still working on that.</div>,
         goals: <div>My goals right now are:
@@ -42,6 +43,7 @@ const Terminal: React.FC = () => {
         and gosh damn is the learning curve crazy. I just have to remind myself that Im improving at my own pace and its all gunna click together soon. Im excited to share pics of my tech art once 
         I feel confident enough to do so.
         </div>,
+        infofetch: <div>Here are specs</div>,
     }
     
     return (
